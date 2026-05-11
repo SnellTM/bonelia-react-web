@@ -1,18 +1,19 @@
-# Bonelia Web
+# Bonelia React Web
 
-Página React/Vite para Bonelia.
+Página web de Bonelia lista para subir a Vercel.
 
-## Cómo probarla en tu compu
-1. Instalar Node.js.
-2. Abrir terminal en esta carpeta.
-3. Ejecutar: `npm install`
-4. Ejecutar: `npm run dev`
-5. Abrir el link que aparece.
+## Cómo subir
+1. Descomprimir el ZIP.
+2. Entrar a la carpeta `bonelia-react-web-fixed`.
+3. Subir TODO el contenido a GitHub, incluyendo la carpeta `src`.
+4. En Vercel: Add New Project → elegir el repo → Deploy.
 
-## Cómo subirla
-Subir todos estos archivos a un repositorio de GitHub y luego importarlo en Vercel.
+Configuración esperada en Vercel:
+- Framework: Vite
+- Build command: npm run build
+- Output directory: dist
 
-## Dónde modificar cosas
-- Textos, precios, sabores y WhatsApp: `src/App.jsx`
-- Colores: buscar códigos como `#8E2F3B`, `#F7E5DB`, etc.
-- Nombre del sitio: `index.html`
+## Archivos importantes
+- `index.html` llama a `/src/main.jsx`.
+- `src/main.jsx` contiene la página.
+- `src/styles.css` contiene el diseño.
